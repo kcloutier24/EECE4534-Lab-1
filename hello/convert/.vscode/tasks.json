@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "make debug-remote",
+            "label": "start-gdb-server"
+        },
+        {
+            "type": "shell",
+            "command": "make kill",
+            "label": "kill-remote"
+        },
+        {
+            "type": "shell",
+            "command": "make",
+            "label": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
